@@ -1,708 +1,1537 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		62E4C28E72BA6A23A83526D4 /* Pods_BrainTeaser_BrainTeaserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E0663D6C364F586C118315 /* Pods_BrainTeaser_BrainTeaserTests.framework */; };
-		942FBB522CEF319078AA2298 /* Pods_BrainTeaserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D48D93A7E00DE8087DA02B8 /* Pods_BrainTeaserTests.framework */; };
-		AE6515E972757C4ED6884D61 /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62EBAF62315B49789D06F65 /* Pods_BrainTeaser.framework */; };
-		C7F1E2B91CF6A6CB002B4DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E2B81CF6A6CB002B4DAD /* AppDelegate.swift */; };
-		C7F1E2BB1CF6A6CB002B4DAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E2BA1CF6A6CB002B4DAD /* ViewController.swift */; };
-		C7F1E2BE1CF6A6CB002B4DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F1E2BC1CF6A6CB002B4DAD /* Main.storyboard */; };
-		C7F1E2C01CF6A6CB002B4DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F1E2BF1CF6A6CB002B4DAD /* Assets.xcassets */; };
-		C7F1E2C31CF6A6CB002B4DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F1E2C11CF6A6CB002B4DAD /* LaunchScreen.storyboard */; };
-		C7F1E2CE1CF6A6CB002B4DAD /* BrainTeaserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E2CD1CF6A6CB002B4DAD /* BrainTeaserTests.swift */; };
-		C7F1E2D91CF6A6CB002B4DAD /* BrainTeaserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E2D81CF6A6CB002B4DAD /* BrainTeaserUITests.swift */; };
-		CD62C0BE5D7AD93707303147 /* Pods_BrainTeaserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6D49DDE9444B98436F6ACA /* Pods_BrainTeaserUITests.framework */; };
-		E8BA3D6735514EEE566F8813 /* Pods_BrainTeaser_BrainTeaserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF412841FA9ADDA45336342 /* Pods_BrainTeaser_BrainTeaserUITests.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C7F1E2CA1CF6A6CB002B4DAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7F1E2AD1CF6A6CB002B4DAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7F1E2B41CF6A6CB002B4DAD;
-			remoteInfo = BrainTeaser;
-		};
-		C7F1E2D51CF6A6CB002B4DAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7F1E2AD1CF6A6CB002B4DAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7F1E2B41CF6A6CB002B4DAD;
-			remoteInfo = BrainTeaser;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0B1B1183B269B1C285FB9EF2 /* Pods-BrainTeaserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaserUITests/Pods-BrainTeaserUITests.release.xcconfig"; sourceTree = "<group>"; };
-		0D48D93A7E00DE8087DA02B8 /* Pods_BrainTeaserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DF412841FA9ADDA45336342 /* Pods_BrainTeaser_BrainTeaserUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser_BrainTeaserUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38ADE09C1E13351C75BA4E82 /* Pods-BrainTeaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig"; sourceTree = "<group>"; };
-		3FE7DC38C836A9DBECC84C33 /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
-		48E0663D6C364F586C118315 /* Pods_BrainTeaser_BrainTeaserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser_BrainTeaserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71E0EA8A8D145FB716E7AB5C /* Pods-BrainTeaserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests.debug.xcconfig"; sourceTree = "<group>"; };
-		890843865A2D633A963C6802 /* Pods-BrainTeaser-BrainTeaserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser-BrainTeaserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserTests/Pods-BrainTeaser-BrainTeaserTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8B6D49DDE9444B98436F6ACA /* Pods_BrainTeaserUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaserUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD5205BA35E1173192275FB0 /* Pods-BrainTeaserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaserUITests/Pods-BrainTeaserUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C09AE847A5A917353C65F5A1 /* Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserUITests/Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C7F1E2B51CF6A6CB002B4DAD /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7F1E2B81CF6A6CB002B4DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7F1E2BA1CF6A6CB002B4DAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7F1E2BD1CF6A6CB002B4DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C7F1E2BF1CF6A6CB002B4DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C7F1E2C21CF6A6CB002B4DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C7F1E2C41CF6A6CB002B4DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7F1E2C91CF6A6CB002B4DAD /* BrainTeaserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainTeaserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7F1E2CD1CF6A6CB002B4DAD /* BrainTeaserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTeaserTests.swift; sourceTree = "<group>"; };
-		C7F1E2CF1CF6A6CB002B4DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7F1E2D41CF6A6CB002B4DAD /* BrainTeaserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainTeaserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7F1E2D81CF6A6CB002B4DAD /* BrainTeaserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTeaserUITests.swift; sourceTree = "<group>"; };
-		C7F1E2DA1CF6A6CB002B4DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFE41FF85CB2AF28620292F4 /* Pods-BrainTeaserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests.release.xcconfig"; sourceTree = "<group>"; };
-		F441CC61CED329CA48427A44 /* Pods-BrainTeaser-BrainTeaserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser-BrainTeaserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserUITests/Pods-BrainTeaser-BrainTeaserUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F62EBAF62315B49789D06F65 /* Pods_BrainTeaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE2A3FE9B005EAA6968CDD9A /* Pods-BrainTeaser-BrainTeaserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser-BrainTeaserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserTests/Pods-BrainTeaser-BrainTeaserTests.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C7F1E2B21CF6A6CB002B4DAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE6515E972757C4ED6884D61 /* Pods_BrainTeaser.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F1E2C61CF6A6CB002B4DAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				942FBB522CEF319078AA2298 /* Pods_BrainTeaserTests.framework in Frameworks */,
-				62E4C28E72BA6A23A83526D4 /* Pods_BrainTeaser_BrainTeaserTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F1E2D11CF6A6CB002B4DAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD62C0BE5D7AD93707303147 /* Pods_BrainTeaserUITests.framework in Frameworks */,
-				E8BA3D6735514EEE566F8813 /* Pods_BrainTeaser_BrainTeaserUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		52CF500A2D5E74E1379050DA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F62EBAF62315B49789D06F65 /* Pods_BrainTeaser.framework */,
-				0D48D93A7E00DE8087DA02B8 /* Pods_BrainTeaserTests.framework */,
-				8B6D49DDE9444B98436F6ACA /* Pods_BrainTeaserUITests.framework */,
-				48E0663D6C364F586C118315 /* Pods_BrainTeaser_BrainTeaserTests.framework */,
-				0DF412841FA9ADDA45336342 /* Pods_BrainTeaser_BrainTeaserUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C7F1E2AC1CF6A6CB002B4DAD = {
-			isa = PBXGroup;
-			children = (
-				C7F1E2B71CF6A6CB002B4DAD /* BrainTeaser */,
-				C7F1E2CC1CF6A6CB002B4DAD /* BrainTeaserTests */,
-				C7F1E2D71CF6A6CB002B4DAD /* BrainTeaserUITests */,
-				C7F1E2B61CF6A6CB002B4DAD /* Products */,
-				FD9D14A63636003E0306D616 /* Pods */,
-				52CF500A2D5E74E1379050DA /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		C7F1E2B61CF6A6CB002B4DAD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C7F1E2B51CF6A6CB002B4DAD /* BrainTeaser.app */,
-				C7F1E2C91CF6A6CB002B4DAD /* BrainTeaserTests.xctest */,
-				C7F1E2D41CF6A6CB002B4DAD /* BrainTeaserUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C7F1E2B71CF6A6CB002B4DAD /* BrainTeaser */ = {
-			isa = PBXGroup;
-			children = (
-				C7F1E2B81CF6A6CB002B4DAD /* AppDelegate.swift */,
-				C7F1E2BA1CF6A6CB002B4DAD /* ViewController.swift */,
-				C7F1E2BC1CF6A6CB002B4DAD /* Main.storyboard */,
-				C7F1E2BF1CF6A6CB002B4DAD /* Assets.xcassets */,
-				C7F1E2C11CF6A6CB002B4DAD /* LaunchScreen.storyboard */,
-				C7F1E2C41CF6A6CB002B4DAD /* Info.plist */,
-			);
-			path = BrainTeaser;
-			sourceTree = "<group>";
-		};
-		C7F1E2CC1CF6A6CB002B4DAD /* BrainTeaserTests */ = {
-			isa = PBXGroup;
-			children = (
-				C7F1E2CD1CF6A6CB002B4DAD /* BrainTeaserTests.swift */,
-				C7F1E2CF1CF6A6CB002B4DAD /* Info.plist */,
-			);
-			path = BrainTeaserTests;
-			sourceTree = "<group>";
-		};
-		C7F1E2D71CF6A6CB002B4DAD /* BrainTeaserUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C7F1E2D81CF6A6CB002B4DAD /* BrainTeaserUITests.swift */,
-				C7F1E2DA1CF6A6CB002B4DAD /* Info.plist */,
-			);
-			path = BrainTeaserUITests;
-			sourceTree = "<group>";
-		};
-		FD9D14A63636003E0306D616 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				38ADE09C1E13351C75BA4E82 /* Pods-BrainTeaser.debug.xcconfig */,
-				3FE7DC38C836A9DBECC84C33 /* Pods-BrainTeaser.release.xcconfig */,
-				71E0EA8A8D145FB716E7AB5C /* Pods-BrainTeaserTests.debug.xcconfig */,
-				DFE41FF85CB2AF28620292F4 /* Pods-BrainTeaserTests.release.xcconfig */,
-				AD5205BA35E1173192275FB0 /* Pods-BrainTeaserUITests.debug.xcconfig */,
-				0B1B1183B269B1C285FB9EF2 /* Pods-BrainTeaserUITests.release.xcconfig */,
-				890843865A2D633A963C6802 /* Pods-BrainTeaser-BrainTeaserTests.debug.xcconfig */,
-				FE2A3FE9B005EAA6968CDD9A /* Pods-BrainTeaser-BrainTeaserTests.release.xcconfig */,
-				C09AE847A5A917353C65F5A1 /* Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig */,
-				F441CC61CED329CA48427A44 /* Pods-BrainTeaser-BrainTeaserUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C7F1E2B41CF6A6CB002B4DAD /* BrainTeaser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C7F1E2DD1CF6A6CB002B4DAD /* Build configuration list for PBXNativeTarget "BrainTeaser" */;
-			buildPhases = (
-				C89D38A8A6E786181D9DF2AF /* 📦 Check Pods Manifest.lock */,
-				C7F1E2B11CF6A6CB002B4DAD /* Sources */,
-				C7F1E2B21CF6A6CB002B4DAD /* Frameworks */,
-				C7F1E2B31CF6A6CB002B4DAD /* Resources */,
-				1A04F4201F7487B224A6B6BC /* 📦 Embed Pods Frameworks */,
-				7BF364042B3EE7B317C2B45C /* 📦 Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BrainTeaser;
-			productName = BrainTeaser;
-			productReference = C7F1E2B51CF6A6CB002B4DAD /* BrainTeaser.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C7F1E2C81CF6A6CB002B4DAD /* BrainTeaserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C7F1E2E01CF6A6CB002B4DAD /* Build configuration list for PBXNativeTarget "BrainTeaserTests" */;
-			buildPhases = (
-				4F4BD2531AABFF07750F5007 /* 📦 Check Pods Manifest.lock */,
-				C7F1E2C51CF6A6CB002B4DAD /* Sources */,
-				C7F1E2C61CF6A6CB002B4DAD /* Frameworks */,
-				C7F1E2C71CF6A6CB002B4DAD /* Resources */,
-				FD8E39D02F21620F75E65D39 /* 📦 Embed Pods Frameworks */,
-				01664FECD65BECC088C397C1 /* 📦 Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C7F1E2CB1CF6A6CB002B4DAD /* PBXTargetDependency */,
-			);
-			name = BrainTeaserTests;
-			productName = BrainTeaserTests;
-			productReference = C7F1E2C91CF6A6CB002B4DAD /* BrainTeaserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C7F1E2D31CF6A6CB002B4DAD /* BrainTeaserUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C7F1E2E31CF6A6CB002B4DAD /* Build configuration list for PBXNativeTarget "BrainTeaserUITests" */;
-			buildPhases = (
-				5795BACBB8075864CFCD3ABB /* 📦 Check Pods Manifest.lock */,
-				C7F1E2D01CF6A6CB002B4DAD /* Sources */,
-				C7F1E2D11CF6A6CB002B4DAD /* Frameworks */,
-				C7F1E2D21CF6A6CB002B4DAD /* Resources */,
-				308ECF71250D422F47FE636F /* 📦 Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C7F1E2D61CF6A6CB002B4DAD /* PBXTargetDependency */,
-			);
-			name = BrainTeaserUITests;
-			productName = BrainTeaserUITests;
-			productReference = C7F1E2D41CF6A6CB002B4DAD /* BrainTeaserUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C7F1E2AD1CF6A6CB002B4DAD /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "KENNETH GRANDBERRY";
-				TargetAttributes = {
-					C7F1E2B41CF6A6CB002B4DAD = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					C7F1E2C81CF6A6CB002B4DAD = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = C7F1E2B41CF6A6CB002B4DAD;
-					};
-					C7F1E2D31CF6A6CB002B4DAD = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = C7F1E2B41CF6A6CB002B4DAD;
-					};
-				};
-			};
-			buildConfigurationList = C7F1E2B01CF6A6CB002B4DAD /* Build configuration list for PBXProject "BrainTeaser" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = C7F1E2AC1CF6A6CB002B4DAD;
-			productRefGroup = C7F1E2B61CF6A6CB002B4DAD /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C7F1E2B41CF6A6CB002B4DAD /* BrainTeaser */,
-				C7F1E2C81CF6A6CB002B4DAD /* BrainTeaserTests */,
-				C7F1E2D31CF6A6CB002B4DAD /* BrainTeaserUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C7F1E2B31CF6A6CB002B4DAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7F1E2C31CF6A6CB002B4DAD /* LaunchScreen.storyboard in Resources */,
-				C7F1E2C01CF6A6CB002B4DAD /* Assets.xcassets in Resources */,
-				C7F1E2BE1CF6A6CB002B4DAD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F1E2C71CF6A6CB002B4DAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F1E2D21CF6A6CB002B4DAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		01664FECD65BECC088C397C1 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1A04F4201F7487B224A6B6BC /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		308ECF71250D422F47FE636F /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaserUITests/Pods-BrainTeaserUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F4BD2531AABFF07750F5007 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5795BACBB8075864CFCD3ABB /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7BF364042B3EE7B317C2B45C /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C89D38A8A6E786181D9DF2AF /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FD8E39D02F21620F75E65D39 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C7F1E2B11CF6A6CB002B4DAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7F1E2BB1CF6A6CB002B4DAD /* ViewController.swift in Sources */,
-				C7F1E2B91CF6A6CB002B4DAD /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F1E2C51CF6A6CB002B4DAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7F1E2CE1CF6A6CB002B4DAD /* BrainTeaserTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7F1E2D01CF6A6CB002B4DAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7F1E2D91CF6A6CB002B4DAD /* BrainTeaserUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C7F1E2CB1CF6A6CB002B4DAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C7F1E2B41CF6A6CB002B4DAD /* BrainTeaser */;
-			targetProxy = C7F1E2CA1CF6A6CB002B4DAD /* PBXContainerItemProxy */;
-		};
-		C7F1E2D61CF6A6CB002B4DAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C7F1E2B41CF6A6CB002B4DAD /* BrainTeaser */;
-			targetProxy = C7F1E2D51CF6A6CB002B4DAD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C7F1E2BC1CF6A6CB002B4DAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7F1E2BD1CF6A6CB002B4DAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C7F1E2C11CF6A6CB002B4DAD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7F1E2C21CF6A6CB002B4DAD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C7F1E2DB1CF6A6CB002B4DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C7F1E2DC1CF6A6CB002B4DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C7F1E2DE1CF6A6CB002B4DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38ADE09C1E13351C75BA4E82 /* Pods-BrainTeaser.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = BrainTeaser/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.BrainTeaser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BrainTeaser/BrainTeaser-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		C7F1E2DF1CF6A6CB002B4DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FE7DC38C836A9DBECC84C33 /* Pods-BrainTeaser.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = BrainTeaser/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.BrainTeaser;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BrainTeaser/BrainTeaser-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		C7F1E2E11CF6A6CB002B4DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71E0EA8A8D145FB716E7AB5C /* Pods-BrainTeaserTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BrainTeaserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.BrainTeaserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainTeaser.app/BrainTeaser";
-			};
-			name = Debug;
-		};
-		C7F1E2E21CF6A6CB002B4DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFE41FF85CB2AF28620292F4 /* Pods-BrainTeaserTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BrainTeaserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.BrainTeaserTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainTeaser.app/BrainTeaser";
-			};
-			name = Release;
-		};
-		C7F1E2E41CF6A6CB002B4DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD5205BA35E1173192275FB0 /* Pods-BrainTeaserUITests.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = BrainTeaserUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.BrainTeaserUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = BrainTeaser;
-			};
-			name = Debug;
-		};
-		C7F1E2E51CF6A6CB002B4DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B1B1183B269B1C285FB9EF2 /* Pods-BrainTeaserUITests.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = BrainTeaserUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.BrainTeaserUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = BrainTeaser;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C7F1E2B01CF6A6CB002B4DAD /* Build configuration list for PBXProject "BrainTeaser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C7F1E2DB1CF6A6CB002B4DAD /* Debug */,
-				C7F1E2DC1CF6A6CB002B4DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7F1E2DD1CF6A6CB002B4DAD /* Build configuration list for PBXNativeTarget "BrainTeaser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C7F1E2DE1CF6A6CB002B4DAD /* Debug */,
-				C7F1E2DF1CF6A6CB002B4DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7F1E2E01CF6A6CB002B4DAD /* Build configuration list for PBXNativeTarget "BrainTeaserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C7F1E2E11CF6A6CB002B4DAD /* Debug */,
-				C7F1E2E21CF6A6CB002B4DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7F1E2E31CF6A6CB002B4DAD /* Build configuration list for PBXNativeTarget "BrainTeaserUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C7F1E2E41CF6A6CB002B4DAD /* Debug */,
-				C7F1E2E51CF6A6CB002B4DAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C7F1E2AD1CF6A6CB002B4DAD /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>01664FECD65BECC088C397C1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>0B1B1183B269B1C285FB9EF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaserUITests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaserUITests/Pods-BrainTeaserUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D48D93A7E00DE8087DA02B8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_BrainTeaserTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>0DF412841FA9ADDA45336342</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_BrainTeaser_BrainTeaserUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1A04F4201F7487B224A6B6BC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>308ECF71250D422F47FE636F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaserUITests/Pods-BrainTeaserUITests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>38ADE09C1E13351C75BA4E82</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaser.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BC212FF1CFCE7270059B4EE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BrainTeaser-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3FE7DC38C836A9DBECC84C33</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaser.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48E0663D6C364F586C118315</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_BrainTeaser_BrainTeaserTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4F4BD2531AABFF07750F5007</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>52CF500A2D5E74E1379050DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F62EBAF62315B49789D06F65</string>
+				<string>0D48D93A7E00DE8087DA02B8</string>
+				<string>8B6D49DDE9444B98436F6ACA</string>
+				<string>48E0663D6C364F586C118315</string>
+				<string>0DF412841FA9ADDA45336342</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5795BACBB8075864CFCD3ABB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>62E4C28E72BA6A23A83526D4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>48E0663D6C364F586C118315</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>71E0EA8A8D145FB716E7AB5C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaserTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76579A3CD8C88EC0E21D876F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7BF364042B3EE7B317C2B45C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>890843865A2D633A963C6802</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaser-BrainTeaserTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserTests/Pods-BrainTeaser-BrainTeaserTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B6D49DDE9444B98436F6ACA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_BrainTeaserUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>942FBB522CEF319078AA2298</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D48D93A7E00DE8087DA02B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AD5205BA35E1173192275FB0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaserUITests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaserUITests/Pods-BrainTeaserUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE6515E972757C4ED6884D61</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F62EBAF62315B49789D06F65</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C09AE847A5A917353C65F5A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserUITests/Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2AC1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7F1E2B71CF6A6CB002B4DAD</string>
+				<string>C7F1E2CC1CF6A6CB002B4DAD</string>
+				<string>C7F1E2D71CF6A6CB002B4DAD</string>
+				<string>C7F1E2B61CF6A6CB002B4DAD</string>
+				<string>FD9D14A63636003E0306D616</string>
+				<string>52CF500A2D5E74E1379050DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2AD1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>KENNETH GRANDBERRY</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>C7F1E2B41CF6A6CB002B4DAD</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+					</dict>
+					<key>C7F1E2C81CF6A6CB002B4DAD</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>C7F1E2B41CF6A6CB002B4DAD</string>
+					</dict>
+					<key>C7F1E2D31CF6A6CB002B4DAD</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>C7F1E2B41CF6A6CB002B4DAD</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C7F1E2B01CF6A6CB002B4DAD</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C7F1E2AC1CF6A6CB002B4DAD</string>
+			<key>productRefGroup</key>
+			<string>C7F1E2B61CF6A6CB002B4DAD</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C7F1E2B41CF6A6CB002B4DAD</string>
+				<string>C7F1E2C81CF6A6CB002B4DAD</string>
+				<string>C7F1E2D31CF6A6CB002B4DAD</string>
+			</array>
+		</dict>
+		<key>C7F1E2B01CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C7F1E2DB1CF6A6CB002B4DAD</string>
+				<string>C7F1E2DC1CF6A6CB002B4DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C7F1E2B11CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C7F1E2BB1CF6A6CB002B4DAD</string>
+				<string>C7F1E2B91CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2B21CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>AE6515E972757C4ED6884D61</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2B31CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C7F1E2C31CF6A6CB002B4DAD</string>
+				<string>C7F1E2C01CF6A6CB002B4DAD</string>
+				<string>C7F1E2BE1CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2B41CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C7F1E2DD1CF6A6CB002B4DAD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C89D38A8A6E786181D9DF2AF</string>
+				<string>C7F1E2B11CF6A6CB002B4DAD</string>
+				<string>C7F1E2B21CF6A6CB002B4DAD</string>
+				<string>C7F1E2B31CF6A6CB002B4DAD</string>
+				<string>1A04F4201F7487B224A6B6BC</string>
+				<string>7BF364042B3EE7B317C2B45C</string>
+				<string>76579A3CD8C88EC0E21D876F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BrainTeaser</string>
+			<key>productName</key>
+			<string>BrainTeaser</string>
+			<key>productReference</key>
+			<string>C7F1E2B51CF6A6CB002B4DAD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>C7F1E2B51CF6A6CB002B4DAD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BrainTeaser.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C7F1E2B61CF6A6CB002B4DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7F1E2B51CF6A6CB002B4DAD</string>
+				<string>C7F1E2C91CF6A6CB002B4DAD</string>
+				<string>C7F1E2D41CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2B71CF6A6CB002B4DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7F1E2B81CF6A6CB002B4DAD</string>
+				<string>C7F1E2BA1CF6A6CB002B4DAD</string>
+				<string>C7F1E2BC1CF6A6CB002B4DAD</string>
+				<string>C7F1E2BF1CF6A6CB002B4DAD</string>
+				<string>C7F1E2C11CF6A6CB002B4DAD</string>
+				<string>C7F1E2C41CF6A6CB002B4DAD</string>
+				<string>3BC212FF1CFCE7270059B4EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BrainTeaser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2B81CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2B91CF6A6CB002B4DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7F1E2B81CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7F1E2BA1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2BB1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7F1E2BA1CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7F1E2BC1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7F1E2BD1CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2BD1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2BE1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7F1E2BC1CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7F1E2BF1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2C01CF6A6CB002B4DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7F1E2BF1CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7F1E2C11CF6A6CB002B4DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7F1E2C21CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2C21CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2C31CF6A6CB002B4DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7F1E2C11CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7F1E2C41CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2C51CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C7F1E2CE1CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2C61CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>942FBB522CEF319078AA2298</string>
+				<string>62E4C28E72BA6A23A83526D4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2C71CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2C81CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C7F1E2E01CF6A6CB002B4DAD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4F4BD2531AABFF07750F5007</string>
+				<string>C7F1E2C51CF6A6CB002B4DAD</string>
+				<string>C7F1E2C61CF6A6CB002B4DAD</string>
+				<string>C7F1E2C71CF6A6CB002B4DAD</string>
+				<string>FD8E39D02F21620F75E65D39</string>
+				<string>01664FECD65BECC088C397C1</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C7F1E2CB1CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BrainTeaserTests</string>
+			<key>productName</key>
+			<string>BrainTeaserTests</string>
+			<key>productReference</key>
+			<string>C7F1E2C91CF6A6CB002B4DAD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C7F1E2C91CF6A6CB002B4DAD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BrainTeaserTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C7F1E2CA1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C7F1E2AD1CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C7F1E2B41CF6A6CB002B4DAD</string>
+			<key>remoteInfo</key>
+			<string>BrainTeaser</string>
+		</dict>
+		<key>C7F1E2CB1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C7F1E2B41CF6A6CB002B4DAD</string>
+			<key>targetProxy</key>
+			<string>C7F1E2CA1CF6A6CB002B4DAD</string>
+		</dict>
+		<key>C7F1E2CC1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7F1E2CD1CF6A6CB002B4DAD</string>
+				<string>C7F1E2CF1CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BrainTeaserTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2CD1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BrainTeaserTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2CE1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7F1E2CD1CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7F1E2CF1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2D01CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C7F1E2D91CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2D11CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CD62C0BE5D7AD93707303147</string>
+				<string>E8BA3D6735514EEE566F8813</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2D21CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C7F1E2D31CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C7F1E2E31CF6A6CB002B4DAD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5795BACBB8075864CFCD3ABB</string>
+				<string>C7F1E2D01CF6A6CB002B4DAD</string>
+				<string>C7F1E2D11CF6A6CB002B4DAD</string>
+				<string>C7F1E2D21CF6A6CB002B4DAD</string>
+				<string>308ECF71250D422F47FE636F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C7F1E2D61CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BrainTeaserUITests</string>
+			<key>productName</key>
+			<string>BrainTeaserUITests</string>
+			<key>productReference</key>
+			<string>C7F1E2D41CF6A6CB002B4DAD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>C7F1E2D41CF6A6CB002B4DAD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BrainTeaserUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C7F1E2D51CF6A6CB002B4DAD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C7F1E2AD1CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C7F1E2B41CF6A6CB002B4DAD</string>
+			<key>remoteInfo</key>
+			<string>BrainTeaser</string>
+		</dict>
+		<key>C7F1E2D61CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C7F1E2B41CF6A6CB002B4DAD</string>
+			<key>targetProxy</key>
+			<string>C7F1E2D51CF6A6CB002B4DAD</string>
+		</dict>
+		<key>C7F1E2D71CF6A6CB002B4DAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C7F1E2D81CF6A6CB002B4DAD</string>
+				<string>C7F1E2DA1CF6A6CB002B4DAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BrainTeaserUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2D81CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BrainTeaserUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2D91CF6A6CB002B4DAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7F1E2D81CF6A6CB002B4DAD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C7F1E2DA1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7F1E2DB1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C7F1E2DC1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C7F1E2DD1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C7F1E2DE1CF6A6CB002B4DAD</string>
+				<string>C7F1E2DF1CF6A6CB002B4DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C7F1E2DE1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>38ADE09C1E13351C75BA4E82</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BrainTeaser/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>nerdinabriefcase.BrainTeaser</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>BrainTeaser/BrainTeaser-Bridging-Header.h</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C7F1E2DF1CF6A6CB002B4DAD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3FE7DC38C836A9DBECC84C33</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BrainTeaser/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>nerdinabriefcase.BrainTeaser</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>BrainTeaser/BrainTeaser-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C7F1E2E01CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C7F1E2E11CF6A6CB002B4DAD</string>
+				<string>C7F1E2E21CF6A6CB002B4DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C7F1E2E11CF6A6CB002B4DAD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>71E0EA8A8D145FB716E7AB5C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BrainTeaserTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>nerdinabriefcase.BrainTeaserTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BrainTeaser.app/BrainTeaser</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C7F1E2E21CF6A6CB002B4DAD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DFE41FF85CB2AF28620292F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BrainTeaserTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>nerdinabriefcase.BrainTeaserTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BrainTeaser.app/BrainTeaser</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C7F1E2E31CF6A6CB002B4DAD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C7F1E2E41CF6A6CB002B4DAD</string>
+				<string>C7F1E2E51CF6A6CB002B4DAD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C7F1E2E41CF6A6CB002B4DAD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AD5205BA35E1173192275FB0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>BrainTeaserUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>nerdinabriefcase.BrainTeaserUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>BrainTeaser</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C7F1E2E51CF6A6CB002B4DAD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0B1B1183B269B1C285FB9EF2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>BrainTeaserUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>nerdinabriefcase.BrainTeaserUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>BrainTeaser</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C89D38A8A6E786181D9DF2AF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>CD62C0BE5D7AD93707303147</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B6D49DDE9444B98436F6ACA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DFE41FF85CB2AF28620292F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaserTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8BA3D6735514EEE566F8813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0DF412841FA9ADDA45336342</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F441CC61CED329CA48427A44</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaser-BrainTeaserUITests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserUITests/Pods-BrainTeaser-BrainTeaserUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F62EBAF62315B49789D06F65</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_BrainTeaser.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FD8E39D02F21620F75E65D39</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BrainTeaserTests/Pods-BrainTeaserTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FD9D14A63636003E0306D616</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>38ADE09C1E13351C75BA4E82</string>
+				<string>3FE7DC38C836A9DBECC84C33</string>
+				<string>71E0EA8A8D145FB716E7AB5C</string>
+				<string>DFE41FF85CB2AF28620292F4</string>
+				<string>AD5205BA35E1173192275FB0</string>
+				<string>0B1B1183B269B1C285FB9EF2</string>
+				<string>890843865A2D633A963C6802</string>
+				<string>FE2A3FE9B005EAA6968CDD9A</string>
+				<string>C09AE847A5A917353C65F5A1</string>
+				<string>F441CC61CED329CA48427A44</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FE2A3FE9B005EAA6968CDD9A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BrainTeaser-BrainTeaserTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserTests/Pods-BrainTeaser-BrainTeaserTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C7F1E2AD1CF6A6CB002B4DAD</string>
+</dict>
+</plist>

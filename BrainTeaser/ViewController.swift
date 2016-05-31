@@ -10,7 +10,7 @@ import UIKit
 import pop
 
 class ViewController: UIViewController {
-
+//the one that was broke!!!!!!!!!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
