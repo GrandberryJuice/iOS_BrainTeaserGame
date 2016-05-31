@@ -9,7 +9,7 @@
 import UIKit
 import pop
 
-class ViewController: UIViewController {
+class StartGameVC: UIViewController {
 //the one that was broke!!!!!!!!!
     override func viewDidLoad() {
         super.viewDidLoad()
