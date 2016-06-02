@@ -10,17 +10,21 @@ import UIKit
 import pop
 
 class StartGameVC: UIViewController {
-//the one that was broke!!!!!!!!!
+    
+    //Constraints
+    @IBOutlet weak var btnConstraint: NSLayoutConstraint!
+    
+    
+    var animEngine: AnimationEngine!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.animEngine = AnimationEngine(constraints: [btnConstraint])
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(animated: Bool) {
+        self.animEngine.animateOnScreen()
     }
-
 
 }
 

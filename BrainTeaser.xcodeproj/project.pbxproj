@@ -11,6 +11,10 @@
 		942FBB522CEF319078AA2298 /* Pods_BrainTeaserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D48D93A7E00DE8087DA02B8 /* Pods_BrainTeaserTests.framework */; };
 		AE6515E972757C4ED6884D61 /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62EBAF62315B49789D06F65 /* Pods_BrainTeaser.framework */; };
 		C719C9151CFD56220055BBD4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719C9141CFD56220055BBD4 /* CustomButton.swift */; };
+		C734DF231CFE996400F54821 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734DF221CFE996400F54821 /* AnimationEngine.swift */; };
+		C734DF251CFEA11A00F54821 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734DF241CFEA11A00F54821 /* GameVC.swift */; };
+		C734DF271CFEA3DF00F54821 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734DF261CFEA3DF00F54821 /* Card.swift */; };
+		C734DF291CFEA3FE00F54821 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = C734DF281CFEA3FE00F54821 /* Card.xib */; };
 		C7F1E2B91CF6A6CB002B4DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E2B81CF6A6CB002B4DAD /* AppDelegate.swift */; };
 		C7F1E2BB1CF6A6CB002B4DAD /* StartGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E2BA1CF6A6CB002B4DAD /* StartGameVC.swift */; };
 		C7F1E2BE1CF6A6CB002B4DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F1E2BC1CF6A6CB002B4DAD /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		AD5205BA35E1173192275FB0 /* Pods-BrainTeaserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaserUITests/Pods-BrainTeaserUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C09AE847A5A917353C65F5A1 /* Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser-BrainTeaserUITests/Pods-BrainTeaser-BrainTeaserUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C719C9141CFD56220055BBD4 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C734DF221CFE996400F54821 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		C734DF241CFEA11A00F54821 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		C734DF261CFEA3DF00F54821 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C734DF281CFEA3FE00F54821 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		C7F1E2B51CF6A6CB002B4DAD /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F1E2B81CF6A6CB002B4DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F1E2BA1CF6A6CB002B4DAD /* StartGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartGameVC.swift; path = BrainTeaser/StartGameVC.swift; sourceTree = "<group>"; };
@@ -119,6 +127,8 @@
 			children = (
 				C7F1E2BC1CF6A6CB002B4DAD /* Main.storyboard */,
 				C719C9141CFD56220055BBD4 /* CustomButton.swift */,
+				C734DF261CFEA3DF00F54821 /* Card.swift */,
+				C734DF281CFEA3FE00F54821 /* Card.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -127,13 +137,23 @@
 			isa = PBXGroup;
 			children = (
 				C7F1E2BA1CF6A6CB002B4DAD /* StartGameVC.swift */,
+				C734DF241CFEA11A00F54821 /* GameVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		C734DF211CFE994C00F54821 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C734DF221CFE996400F54821 /* AnimationEngine.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		C7F1E2AC1CF6A6CB002B4DAD = {
 			isa = PBXGroup;
 			children = (
+				C734DF211CFE994C00F54821 /* Util */,
 				C719C9131CFD54700055BBD4 /* Controller */,
 				C719C9121CFD545B0055BBD4 /* View */,
 				C7F1E2B71CF6A6CB002B4DAD /* BrainTeaser */,
@@ -318,6 +338,7 @@
 				C7F1E2C31CF6A6CB002B4DAD /* LaunchScreen.storyboard in Resources */,
 				C7F1E2C01CF6A6CB002B4DAD /* Assets.xcassets in Resources */,
 				C7F1E2BE1CF6A6CB002B4DAD /* Main.storyboard in Resources */,
+				C734DF291CFEA3FE00F54821 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +502,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F1E2BB1CF6A6CB002B4DAD /* StartGameVC.swift in Sources */,
+				C734DF271CFEA3DF00F54821 /* Card.swift in Sources */,
 				C7F1E2B91CF6A6CB002B4DAD /* AppDelegate.swift in Sources */,
+				C734DF231CFE996400F54821 /* AnimationEngine.swift in Sources */,
+				C734DF251CFEA11A00F54821 /* GameVC.swift in Sources */,
 				C719C9151CFD56220055BBD4 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
