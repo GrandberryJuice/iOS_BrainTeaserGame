@@ -14,8 +14,13 @@ class GameVC: UIViewController {
     @IBOutlet weak var yesBtn: CustomButton!
     @IBOutlet weak var noBtn: CustomButton!
     @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var timerLbl:UILabel!
     
+    //variables
     var currentCard: Card!
+    var counter = 60
+    var timer = NSTimer()
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidLoad()
@@ -26,14 +31,10 @@ class GameVC: UIViewController {
        
     }
     
-//    override func viewDidDisappear(animated: Bool) {
-//         AnimationEngine.animateToPosition(currentCard, position: CGPointMake(0, UIScreen.mainScreen().bounds.height))
-//    }
     
     @IBAction func yesPressed(sender: UIButton) {
         if sender.titleLabel?.text == "YES" {
             checkAnswer()
-            
         } else {
             titleLbl.text = "Does this card match the previous?"
         }
@@ -62,13 +63,13 @@ class GameVC: UIViewController {
             
             if noBtn.hidden {
                 noBtn.hidden = false
-                
                 yesBtn.setTitle("YES", forState: .Normal)
+                timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
             }
             
             AnimationEngine.animateToPosition(next, position: AnimationEngine.screenCenterPosition, completion: { (
                 anim:POPAnimation!, finished:Bool) -> Void in
-                
+    
             })
         }
     }
@@ -79,6 +80,18 @@ class GameVC: UIViewController {
     
     
     func checkAnswer() {
+        
+    }
+    
+    func timerAction() {
+        repeat {
+            counter -= 1
+            if counter > 9 {
+                timerLbl.text = "0:\(counter)"
+            } else {
+                timerLbl.text = "0:0\(counter)"
+            }
+        } while counter < 0
         
     }
 }
