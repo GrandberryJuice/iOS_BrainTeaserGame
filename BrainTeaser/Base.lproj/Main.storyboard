@@ -228,9 +228,11 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="correctImg" destination="8UB-1W-dmf" id="P25-Nq-Ik9"/>
                         <outlet property="noBtn" destination="NSN-qg-6aw" id="uq3-vL-SOx"/>
                         <outlet property="timerLbl" destination="gST-fo-Jjv" id="JrZ-7f-QBC"/>
                         <outlet property="titleLbl" destination="ZbS-T4-gA7" id="f0h-je-FPN"/>
+                        <outlet property="wrongImg" destination="iy9-dN-cAR" id="Xkp-fX-pJU"/>
                         <outlet property="yesBtn" destination="FWv-PF-f6a" id="0da-sD-bmc"/>
                     </connections>
                 </viewController>
