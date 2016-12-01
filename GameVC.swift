@@ -20,40 +20,40 @@ class GameVC: UIViewController {
     
     //variables
     var currentCard: Card!
-    var counter = 60
-    var timer = NSTimer()
+    var counter = 30
+    var timer = Timer()
     var lastCard:Card!
     var addPoints = 0
+    //var restartGameVC:RestartGameVC!
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
         currentCard = createCardFromNib()
         currentCard.center = AnimationEngine.screenCenterPosition
         self.view.addSubview(currentCard)
     }
     
+  
     
-    @IBAction func yesPressed(sender: UIButton) {
+    @IBAction func yesPressed(_ sender: UIButton) {
         if sender.titleLabel?.text == "YES" {
             cardState()
             yesToAnswer()
- //            checkAnswer()
+ 
         } else {
-            titleLbl.text = "Does this card match the previous?"
+            titleLbl.text = "Does this card match the first card?"
         }
         showNextCard(sender)
     }
     
-    @IBAction func noPressed(sender: AnyObject) {
-       
+    @IBAction func noPressed(_ sender: AnyObject) {
         cardState()
         noToAnswer()
-//        checkAnswer()
         showNextCard(sender as! UIButton)
    
     }
     
-    func showNextCard(sender:UIButton) {
+    func showNextCard(_ sender:UIButton) {
         if let current = currentCard {
             let cardToRemove = currentCard
 
@@ -66,8 +66,8 @@ class GameVC: UIViewController {
             }
             currentCard = nil
             
-            AnimationEngine.animateToPosition(cardToRemove, position: AnimationEngine.offScreenLeftPosition, completion: { (anim:POPAnimation!, finished: Bool) -> Void in
-                cardToRemove.removeFromSuperview()
+            AnimationEngine.animateToPosition(cardToRemove!, position: AnimationEngine.offScreenLeftPosition, completion: { (anim:POPAnimation?, finished:Bool) in
+                cardToRemove?.removeFromSuperview()
             })
         }
         
@@ -76,48 +76,36 @@ class GameVC: UIViewController {
             self.view.addSubview(next)
             currentCard = next
             
-            if noBtn.hidden {
-                noBtn.hidden = false
-                yesBtn.setTitle("YES", forState: .Normal)
-                timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+            if noBtn.isHidden {
+                noBtn.isHidden = false
+                yesBtn.setTitle("YES", for: UIControlState())
+                timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
             }
             
-            AnimationEngine.animateToPosition(next, position: AnimationEngine.screenCenterPosition, completion: { (
-                anim:POPAnimation!, finished:Bool) -> Void in
+            AnimationEngine.animateToPosition(next, position: AnimationEngine.screenCenterPosition, completion: { (anim:POPAnimation?, finished:Bool) in
+                //code
             })
         }
     }
     
     func createCardFromNib() -> Card? {
-       return  NSBundle.mainBundle().loadNibNamed("Card", owner: self, options: nil) [0] as? Card
+       return  Bundle.main.loadNibNamed("Card", owner: self, options: nil)? [0] as? Card
     }
     
     
-//    func checkAnswer() {
-//        print(lastCard.currentShape)
-//        print(currentCard.currentShape)
-//        if lastCard.currentShape == currentCard.currentShape {
-//            addPoints += 1
-//            //POPUP Green checkmark
-//            print("correct!")
-//        } else {
-//            //POPUP Red checkmark
-//            print("wrong!")
-//        }
-//    }
     
     func yesToAnswer() {
         if lastCard.currentShape == currentCard.currentShape {
             addPoints += 1
-            correctImg.hidden = false
+            correctImg.isHidden = false
             delay(1.0) {
-                self.correctImg.hidden = true
+                self.correctImg.isHidden = true
             }
             //print("correct")
         } else {
-            wrongImg.hidden = false
+            wrongImg.isHidden = false
             delay(1.0) {
-                self.wrongImg.hidden = true
+                self.wrongImg.isHidden = true
             }
             print("wrong")
         }
@@ -126,31 +114,32 @@ class GameVC: UIViewController {
     func noToAnswer() {
         if lastCard.currentShape != currentCard.currentShape {
             addPoints += 1
-            correctImg.hidden = false
+            correctImg.isHidden = false
             delay(1.0) {
-                self.correctImg.hidden = true
+                self.correctImg.isHidden = true
             }
-
-            //print("correct")
         } else {
-            wrongImg.hidden = false
+            wrongImg.isHidden = false
             delay(1.0) {
-                self.wrongImg.hidden = true
+                self.wrongImg.isHidden = true
             }
-            //print("wrong")
         }
     }
     
     
     func timerAction() {
-        repeat {
             counter -= 1
             if counter > 9 {
                 timerLbl.text = "0:\(counter)"
             } else {
                 timerLbl.text = "0:0\(counter)"
             }
-        } while counter < 0
+        if counter == 0 {
+            currentCard.removeFromSuperview()
+            performSegue(withIdentifier: "RestartGameVC", sender: addPoints)
+            
+        }
+        
     }
     
     func cardState() {
@@ -159,15 +148,18 @@ class GameVC: UIViewController {
         }
     }
     
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
+    func delay(_ delay:Double, closure:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
     }
     
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "RestartGameVC" {
+            if let restartGameVC = segue.destination as? RestartGameVC {
+                if let points =  sender as? Int {
+                    restartGameVC.points = points
+                }
+            }
+        }
+    }
 }

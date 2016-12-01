@@ -12,15 +12,15 @@ import pop
 class AnimationEngine {
     
     class var offScreenRightPosition: CGPoint {
-        return CGPointMake(UIScreen.mainScreen().bounds.width, CGRectGetMidY(UIScreen.mainScreen().bounds))
+        return CGPoint(x: UIScreen.main.bounds.width, y: UIScreen.main.bounds.midY)
     }
     
     class var offScreenLeftPosition: CGPoint {
-        return CGPointMake(-UIScreen.mainScreen().bounds.width, CGRectGetMidY(UIScreen.mainScreen().bounds))
+        return CGPoint(x: -UIScreen.main.bounds.width, y: UIScreen.main.bounds.midY)
     }
     
     class var screenCenterPosition: CGPoint {
-        return CGPointMake(CGRectGetMidX(UIScreen.mainScreen().bounds), CGRectGetMidY(UIScreen.mainScreen().bounds))
+        return CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
     }
     
     var originalConstants = [CGFloat]()
@@ -39,24 +39,24 @@ class AnimationEngine {
         var index = 0
         repeat {
             let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-            moveAnim.toValue = self.originalConstants[index]
-            moveAnim.springBounciness = 12
-            moveAnim.springSpeed = 12
+            moveAnim?.toValue = self.originalConstants[index]
+            moveAnim?.springBounciness = 12
+            moveAnim?.springSpeed = 12
             
             let con = self.constraints[index]
-            con.pop_addAnimation(moveAnim, forKey: "moveOnScreen")
+            con.pop_add(moveAnim, forKey: "moveOnScreen")
             
             index += 1
             
         } while (index < self.constraints.count)
     }
     
-    class func animateToPosition(view:UIView, position:CGPoint, completion: ((POPAnimation!, Bool) ->Void)) {
+    class func animateToPosition(_ view:UIView, position:CGPoint, completion: @escaping ((POPAnimation?, Bool) ->Void)) {
         let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
-        moveAnim.toValue = NSValue(CGPoint: position)
-        moveAnim.springBounciness = 8
-        moveAnim.springSpeed = 8
-        moveAnim.completionBlock = completion
-        view.pop_addAnimation(moveAnim, forKey: "moveToPosition")
+        moveAnim?.toValue = NSValue(cgPoint: position)
+        moveAnim?.springBounciness = 8
+        moveAnim?.springSpeed = 8
+        moveAnim?.completionBlock = completion
+        view.pop_add(moveAnim, forKey: "moveToPosition")
     }
  }
